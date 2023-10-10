@@ -1,4 +1,4 @@
-# StreamPOS Point Of Sale Application
+# Project: StreamPOS - Point Of Sale Application
 
 ## Introduction
 

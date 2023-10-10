@@ -63,9 +63,9 @@ function Sidebar() {
 
     return (
         <div className="sidebar w-60 min-h-screen bg-gray-900 text-gray-300">
-            <div className="mt-0 py-4 px-6">
+            <div className="mt-6 py-4 px-6">
                 <a href="/dashboard">
-                    <img src="https://i.imgur.com/9GsAwJD.png" alt="StreamPOS" className="mb-10 w-32 h-auto cursor-pointer" />
+                    <img src="https://i.imgur.com/75e2i2H.png" alt="StreamPayments Logo" className="mb-10 w-32 h-auto cursor-pointer" />
                 </a>
                 <nav className="mb-6">
                     <ul>
@@ -75,6 +75,9 @@ function Sidebar() {
                     </ul>
                 </nav>
             </div>
+            <footer className="absolute bottom-0 w-full bg-transparent text-center py-2 text-sm">
+                © 2023 StreamPayments™. All Rights Reserved.
+            </footer>
         </div>
     );
 }

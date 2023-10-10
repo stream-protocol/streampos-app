@@ -21,16 +21,16 @@ function Sidebar() {
   ];
 
   return (
-    <div className="sidebar w-64 min-h-screen bg-gray-700 text-gray-300"> {/* Added min-h-screen */}
-      <div className="mt-25 py-4 px-15">
+    <div className="sidebar w-60 h-screen transparent text-gray-600">
+      <div className="mt-0 py-4 px-6">
         <a href="/dashboard">
-          <img src="https://i.imgur.com/75e2i2H.png" alt="StreamPayments Logo" className="mb-10 w-32 h-auto cursor-pointer" />
+          <img src="https://i.imgur.com/75e2i2H.png" alt="" className="mb-10 w-32 h-auto cursor-pointer" />
         </a>
-        <nav className="mb-25">
+        <nav className="mb-0">
           <ul>
             {menuItems.map(item => (
               <li key={item.id}>
-                <button onClick={() => setSelectedTab(item.id)} className={`flex items-center mb-3 px-4 py-2 rounded ${selectedTab === item.id ? 'bg-gray-600' : ''} hover:bg-gray-600 transition-all`}>
+                <button onClick={() => setSelectedTab(item.id)} className={`flex items-center mb-3 px-4 py-2 rounded ${selectedTab === item.id ? 'bg-gray-200' : ''} hover:bg-gray-100 transition-all`}>
                   {item.icon}
                   <span className="ml-3">{item.label}</span>
                 </button>
@@ -39,9 +39,6 @@ function Sidebar() {
           </ul>
         </nav>
       </div>
-      <footer className="absolute bottom-0 w-full bg-transparent text-center py-2 text-sm">
-        © 2023 StreamPayments™. All Rights Reserved.
-      </footer>
     </div>
   );
 }
